@@ -1,0 +1,12 @@
+.grid {
+  width: 400px;
+  height: 400px;
+  border-collapse: collapse;
+}
+
+.cols {
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  transition: background-color 0.3s ease;
+}
