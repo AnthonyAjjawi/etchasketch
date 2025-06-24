@@ -23,7 +23,7 @@ function getUserValue() {
     convertToInt = parseInt(userInput.value);
     number = isNaN(convertToInt) ? 16 : convertToInt;
 
-    clearGrid();
+   
     makeGrid(number);
     // return number;
     console.log(number);
@@ -43,6 +43,7 @@ function makeGrid(number) {
       // cols.style.backgroundColor = "#ccc"
       cols.addEventListener("mouseover", function () {
         cols.style.backgroundColor = randomColor();
+        
       });
 
       rows.appendChild(cols);
@@ -61,12 +62,13 @@ function randomColor() {
 }
 
 //clear grid
-function clearGrid(cols) {
+function clearGrid() {
   reset.addEventListener("click", function () {
-    const allCells = document.querySelector(".cols");
+    const allCells = document.querySelectorAll(".cols");
 
     allCells.forEach((cell) => {
       cell.style.backgroundColor = "";
     });
   });
 }
+clearGrid();
