@@ -16,7 +16,7 @@ let convertToInt;
 //number variable
 let number = 0;
 
-//function get userValue
+//function to convert user value
 function getUserValue() {
   button.addEventListener("click", function (e) {
     e.preventDefault();
@@ -40,7 +40,7 @@ function makeGrid(number) {
       let cols = document.createElement("td");
 
       cols.classList.add("cols");
-      // cols.style.backgroundColor = "#ccc"
+     
       cols.addEventListener("mouseover", function () {
         cols.style.backgroundColor = randomColor();
         

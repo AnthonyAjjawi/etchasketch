@@ -1,7 +1,49 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: deepskyblue;
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
 .grid {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 650px;
   border-collapse: collapse;
+  background-color: #fff;
+  
+}
+
+input#userInput {
+  width: 11rem;
+  padding: 0.5rem 1rem;
+  border-color: transparent;
+  background: mediumslateblue;
+  color: white;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: white;
 }
 
 .cols {
@@ -9,4 +51,46 @@
   width: 20px;
   height: 20px;
   transition: background-color 0.3s ease;
+}
+
+
+.button__container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+button.btn-1, button.reset {
+  padding: 0.5rem 1rem;
+  border-color: transparent;
+  background: mediumslateblue;
+  color: white;
+  font-size: 1rem;
+}
+
+.button__container > button:active {
+
+  background: mediumslateblue;
+  box-shadow: 0 5px rgb(27, 106, 224);
+  transform: translateY(4px);
+
+}
+
+
+@media screen and (max-width: 768px) {
+   .container {
+     display: flex;
+     justify-content: center;
+     margin: 0 auto;
+     width: 150px;
+     margin-bottom: 2rem;
+    
+   }
+
+   .grid {
+    width: 300px;
+    height: 200px
+   }
+
+   
 }

@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Etch-A-Sketch</title>
 </head>
+
 <body>
     <header>
         <h1>Etch-A-Sketch</h1>
-       
+
     </header>
     <main>
-        
-        <input type="number" id="userInput" min="1" max="100" >
-        <table class="grid"></table>
-         <button class="btn-1">Submit</button>
-         <button class="reset">Reset</button>
+        <div class="container">
+            <input type="number" id="userInput" min="1" max="100" placeholder="Enter a grid size">
+            <table class="grid"></table>
+            <div class="button__container">
+                <button class="btn-1">Submit Grid Size</button>
+                <button class="reset">Clear Board</button>
+            </div>
 
-    
+        </div>
     </main>
     <script src="script.js" defer></script>
 </body>
+
 </html>
